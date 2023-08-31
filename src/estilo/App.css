@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --1: #FFFFFF;
+    --2: #F5F4F0;
+    --3: #B9A28E;
+    --4: #ACC2D4;
+    --5: #DBA39A;
+    --6: #343434;
+}
+li{list-style: none;}
+a{text-decoration: none;}
+img{
+    height: 100%;
+    display: block;
+}
+h2{
+    font-weight: 800;
+    color: var(--6);
+}
+
+.nav-content{
+    padding: 30px 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--2);
+}
+.nav-list{display: flex;}
+.nav-item-li{padding: 0 8px;}
+.nav-item-a{
+    font-weight: 600;
+    color: var(--6);
+    filter: blur(1px);
+    transition: 1s;
+}
+.nav-item-a:hover{
+    filter: blur(0px);
+}
+.nav-item-logo{
+    height: 78px;
+    padding: 0 8px;
+}
+
+.nav-content-mobile{
+    background-color: var(--2);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+.nav-item-icon{height: 24px;}
+.nav-item-logo-small{
+    height: 54px;
+    padding: 0 8px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    justify-items: center;
+    gap: 50px;
+    padding: 30px 78px 0;
+}
+.unit{
+    aspect-ratio: 1/1;
+    width: 100%;
+    position: relative;
+}
+.unit-img{
+    aspect-ratio: 1/1;
+    width: 95%;
+    border: 2.5px solid var(--6);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.unit-deco{
+    aspect-ratio: 1/1;
+    width: 95%;
+    border: 2.5px solid var(--6);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.unit-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px;
+    border: 2.5px solid var(--6);
+    border-radius: 10px;
+}
+.unit-desc-p{
+    margin-top: 8px;
+}
+.unit-desc-btn{
+    margin: 8px 8px 0 0;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2.5px solid var(--6);
+    background-color: var(--1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.unit-desc-btn:hover{
+    background-color: var(--4);
+    border: 2.5px solid var(--4);
+}
+.unit-desc-a{
+    color: var(--6);
+    font-weight: 800;
+}
+
+@media screen and (max-width:780px){
+    .nav-content{
+        display: none;
+    }
+    .nav-content-mobile{
+        display: flex;
+    }
+    section{
+        padding: 16px 28px 0;
+    }
+}

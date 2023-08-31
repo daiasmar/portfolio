@@ -1,0 +1,21 @@
+[
+    {
+        "titulo" : "Angurria",
+        "subtitulo" : "Digitalización de un juego popular",
+        "tags" : ["HTML","CSS","JS Vanilla"],
+        "portada" : "../src/img/angurria_01.png",
+        "link" : "https://angurria.netlify.app/"
+    },
+    {
+        "titulo" : "SIGPP"
+    },
+    {
+        "titulo" : "DBT",
+        "subtitulo" : "Para incentivar el voto consciente",
+        "tags" : ["UX","UI"],
+        "link" : "https://www.figma.com/file/lfZ7TXGGOTNZebN6rToaWT/Elecciones?type=design&node-id=1%3A5&mode=design&t=i0J2bUzdKQsw34sT-1"
+    },
+    {
+        "titulo" : "era"
+    }
+]
